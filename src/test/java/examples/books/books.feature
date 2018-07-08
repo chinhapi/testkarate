@@ -1,7 +1,8 @@
 Feature: Book API sample
-
+  @env=books
+  @wip
   Scenario: get list books
-  * url 'http://restapi.demoqa.com/utilities/books/getallbooks'
+  * url someUrlBase
     When method get
     * def Author = $.books[*].author
     * def Pages = $.books[?(@.pages<=234)]

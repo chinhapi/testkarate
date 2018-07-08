@@ -1,7 +1,7 @@
 Feature: sample karate test script
 
 Background:
-* url 'https://jsonplaceholder.typicode.com'
+* url someUrlBase
 
 Scenario: get all users and then get the first user by id
 
@@ -31,7 +31,6 @@ Scenario: create a user and then get it by id
   }
 }
 """
-
 Given url 'https://jsonplaceholder.typicode.com/users'
 And request user
 When method post

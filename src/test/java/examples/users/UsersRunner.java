@@ -15,7 +15,10 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
-@CucumberOptions(features = "classpath:examples/users/Calling.feature")
+@CucumberOptions(
+        features = {"classpath:examples/books/books.feature"},
+        tags = "@wip"
+)
 public class UsersRunner {
     @Test
     public void testParallel() {

@@ -17,6 +17,13 @@ Feature: Call java/Java Scripts
     * def authToken = SignIn.authToken
 
   @env=stage
+  @wip
   Scenario: switch evn
     * print someUrlBase
+
+    Scenario Outline: abc
+      * print a: "<a>"
+      Examples:
+      |a|
+      |1|
 

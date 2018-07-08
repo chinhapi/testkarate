@@ -1,8 +1,9 @@
 Feature: Sample FIFA World Cup 2018 Russia APIs
 
   Scenario: Get all matches
-    * url "https://raw.githubusercontent.com/openfootball/world-cup.json/master/2018/worldcup.json"
-    Given method get
+    * url someUrlBase
+    Given path '/openfootball/world-cup.json/master/2018/worldcup.json'
+    And method get
 #    * print response
 #    * def stadiums = $..stadium.name
 #    * print stadiums

@@ -1,5 +1,6 @@
 Feature: here are the contents of 'my-signin.feature'
-
+  @env=SignIn
+  @wip
   Scenario:
     Given url loginUrlBase
     And request { userId: '#(username)', userPass: '#(password)' }
